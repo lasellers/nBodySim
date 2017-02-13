@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by nBodySim.rc
+//
+#define IDC_MYICON                      2
+#define IDD_NBODYSIM_DIALOG             102
+#define IDD_ABOUTBOX                    103
+#define IDS_APP_TITLE                   103
+#define IDM_ABOUT                       104
+#define IDM_EXIT                        105
+#define IDS_HELLO                       106
+#define IDI_NBODYSIM                    107
+#define IDI_SMALL                       108
+#define IDC_NBODYSIM                    109
+#define IDR_MAINFRAME                   128
+#define IDR_TOOLBAR1                    129
+#define IDR_WAVE_ABOUT                  132
+#define IDB_BITMAP_SARAH                136
+#define IDR_WAVE_COLLISION              138
+#define IDM_NUMERIC_DATA                32774
+#define IDM_KILL_VELOCITIES             32775
+#define IDM_FPS_1                       32776
+#define IDM_FPS_30                      32777
+#define IDM_BODIES_1                    32778
+#define IDM_BODIES_2                    32779
+#define IDM_BODIES_3                    32780
+#define IDM_BODIES_4                    32781
+#define IDM_BODIES_5                    32782
+#define IDM_BODIES_10                   32783
+#define IDM_BODIES_20                   32784
+#define IDM_BODIES_100                  32785
+#define IDM_SCENARIO_SOLSYSTEM          32786
+#define IDM_TIMEFACTOR_1                32787
+#define IDM_TIMEFACTOR_10               32788
+#define IDM_TIMEFACTOR_100              32789
+#define IDM_UNIGNORE                    32790
+#define IDM_UNIGNORE_ALL                32791
+#define IDM_INITIAL_VELOCITIES_NONE     32792
+#define IDM_INITIAL_VELOCITIES_RANDOM   32793
+#define IDM_2D                          32794
+#define IDM_RIGID_BODY_2D_MODEL         32794
+#define IDM_3D                          32795
+#define IDM_RIGID_BODY_3D_MODEL         32795
+#define IDM_BODIES_1000                 32796
+#define IDM_2D_SOFTBODY                 32797
+#define IDM_FLUID_BODY_2D_MODEL         32797
+#define IDM_IGNORE_DISTANCE_1000        32798
+#define IDM_AUTOZOOM_1000               32798
+#define IDM_IGNORE_DISTANCE_10000       32799
+#define IDM_AUTOZOOM_10000              32799
+#define IDM_INCREASE_MASS               32800
+#define IDM_DECREASE_MASS               32801
+#define IDM_IGNORE                      32802
+#define IDM_IGNORE_DISTANCE_NONE        32803
+#define IDM_AUTOZOOM                    32803
+#define IDM_TIMEFACTOR_1000             32804
+#define IDM_TIMEFACTOR_10000            32805
+#define IDM_TIMEFACTOR_100000           32806
+#define IDM_IGNORE_DISTANCE_200         32807
+#define IDM_AUTOZOOM_200                32807
+#define IDM_SCENARIO_2BODYCOLLISION     32808
+#define IDM_SCENARIO_2BODY_COLLISION_A  32808
+#define IDM_LOCK_VIEWPORT               32809
+#define IDM_SCENARIO_3BODYCOLLISION     32810
+#define IDM_SCENARIO_3BODYCOLLISIONREVERSE 32811
+#define IDM_SCENARIO_2BODYCOLLISIONEQUAL 32812
+#define IDM_SCENARIO_2COLLIDE           32813
+#define IDM_PAUSERESUME                 32814
+#define IDM_SCENARIO_2BODY_ORBIT        32815
+#define IDM_RESTITUTION_00              32816
+#define IDM_RESTITUTION_05              32817
+#define IDM_RESTITUTION_10              32818
+#define IDM_FLUID_BODY_3D_MODEL         32821
+#define IDM_SCENARIO_2BODY_COLLISION_D  32822
+#define IDM_Z_PLUS                      32823
+#define IDM_Z_MINUS                     32824
+#define ID_BUTTON32825                  32825
+#define ID_BUTTON32826                  32826
+#define IDM_VIEWPORT_200                32827
+#define IDM_VIEWPORT_1000               32828
+#define IDM_VIEWPORT_10000              32829
+#define IDM_VIEWPORT_100                32830
+#define IDM_VIEWPORT_5000               32831
+#define IDM_IGNORE_ALL                  32832
+#define IDM_AUTOZOOM_100                32833
+#define IDM_SELECT_NEXT                 32834
+#define IDM_SELECT_PREVIOUS             32835
+#define IDM_FPS_60                      32836
+#define IDM_GRID                        32839
+#define KILL_VELOCITY                   32840
+#define IDM_KILL_VELOCITY               32841
+#define IDM_AUTOZOOM_5000               32842
+#define IDM_BODY_RIGID                  32851
+#define IDM_BODY_FLUID                  32852
+#define IDM_STATIC_COLLISION            32854
+#define IDM_DYNAMIC_COLLISION           32855
+#define IDM_DIMENSIONS_TWO              32856
+#define IDM_DIMENSIONS_THREE            32857
+#define IDM_NEGATIVE_MASS               32858
+#define IDM_CONTENTS                    32859
+#define IDM_INDEX                       32860
+#define IDM_FIND                        32861
+#define IDM_VIEWPORT_500                32862
+#define IDM_SOUNDEFFECTS                32863
+#define ID_SELECTCLICKED                32864
+#define ID_CHANGEMOMENTUM               32865
+#define IDM_BODIES_10000                32866
+#define IDC_STATIC                      -1
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        139
+#define _APS_NEXT_COMMAND_VALUE         32867
+#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_SYMED_VALUE           110
+#endif
+#endif

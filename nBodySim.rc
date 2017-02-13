@@ -1,0 +1,344 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NBODYSIM            ICON    DISCARDABLE     "nBodySim.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_NBODYSIM MENU DISCARDABLE 
+BEGIN
+    POPUP "&App"
+    BEGIN
+        MENUITEM "Pause/Resume\tPAUSE",         IDM_PAUSERESUME
+        MENUITEM SEPARATOR
+        POPUP "FPS"
+        BEGIN
+            MENUITEM "FPS 1",                       IDM_FPS_1
+            MENUITEM "FPS 30",                      IDM_FPS_30
+            MENUITEM "FPS 60",                      IDM_FPS_60
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Scenarios"
+    BEGIN
+        MENUITEM "2-body collision, 1 static 1 moving", 
+                                                IDM_SCENARIO_2BODY_COLLISION_A
+
+        MENUITEM "2-body equal collision",      IDM_SCENARIO_2BODYCOLLISIONEQUAL
+
+        MENUITEM "2-body equal collide at 1m each", IDM_SCENARIO_2COLLIDE
+        MENUITEM "2-body collision at 45 degree angle", 
+                                                IDM_SCENARIO_2BODY_COLLISION_D
+
+        MENUITEM SEPARATOR
+        MENUITEM "2-body orbit",                IDM_SCENARIO_2BODY_ORBIT
+        MENUITEM SEPARATOR
+        MENUITEM "3-body reverse collision",    IDM_SCENARIO_3BODYCOLLISIONREVERSE
+
+        MENUITEM "3-body collision",            IDM_SCENARIO_3BODYCOLLISION
+        MENUITEM SEPARATOR
+        MENUITEM "Sol System",                  IDM_SCENARIO_SOLSYSTEM
+    END
+    POPUP "View Port"
+    BEGIN
+        MENUITEM "View 100 distance\t1",        IDM_VIEWPORT_100
+        MENUITEM "View 200 distance\t2",        IDM_VIEWPORT_200
+        MENUITEM "View 500 distance\t3",        IDM_VIEWPORT_500
+        MENUITEM "View 1,000 distance\t4",      IDM_VIEWPORT_1000
+        MENUITEM "View 5,000 distance\t5",      IDM_VIEWPORT_5000
+        MENUITEM "View 10,000 distance\t6",     IDM_VIEWPORT_10000
+        MENUITEM SEPARATOR
+        MENUITEM "Autozoom\tSPACE",             IDM_AUTOZOOM
+        MENUITEM "Autozoom - Ignore beyond 100 distance", IDM_AUTOZOOM_100
+        MENUITEM "Autozoom - Ignore beyond 200 distance", IDM_AUTOZOOM_200
+        MENUITEM "Autozoom - Ignore beyond 1,000 distance", 
+                                                IDM_AUTOZOOM_1000
+        MENUITEM "Autozoom - Ignore beyond 5,000 distance", 
+                                                IDM_AUTOZOOM_5000
+        MENUITEM "Autozoom - Ignore beyond 10,000 distance", 
+                                                IDM_AUTOZOOM_10000
+        MENUITEM SEPARATOR
+        MENUITEM "Unignore All",                IDM_UNIGNORE_ALL
+        MENUITEM "Ignore All",                  IDM_IGNORE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Lock Viewport\tSCROLL LOCK",  IDM_LOCK_VIEWPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Numeric Body Data\t`",        IDM_NUMERIC_DATA
+        MENUITEM "&Grid\tG",                    IDM_GRID
+    END
+    POPUP "nBodies"
+    BEGIN
+        MENUITEM "1",                           IDM_BODIES_1
+        MENUITEM "2",                           IDM_BODIES_2
+        MENUITEM "3",                           IDM_BODIES_3
+        MENUITEM "4",                           IDM_BODIES_4
+        MENUITEM "5",                           IDM_BODIES_5
+        MENUITEM "10",                          IDM_BODIES_10
+        MENUITEM "20",                          IDM_BODIES_20
+        MENUITEM "100",                         IDM_BODIES_100
+        MENUITEM "1,000 (>1GHZ machines only)", IDM_BODIES_1000
+        MENUITEM "10,000 (>3GHZ machines only)", IDM_BODIES_10000
+        MENUITEM SEPARATOR
+        POPUP "Initial Velocities"
+        BEGIN
+            MENUITEM "None",                        IDM_INITIAL_VELOCITIES_NONE
+
+            MENUITEM "Random",                      IDM_INITIAL_VELOCITIES_RANDOM
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Kill Velocities\tDELETE",     IDM_KILL_VELOCITIES
+    END
+    POPUP "Body"
+    BEGIN
+        MENUITEM "Increase Mass\t+",            IDM_INCREASE_MASS
+        MENUITEM "Decrease Mass\t-",            IDM_DECREASE_MASS
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle Ignore\tI",            IDM_IGNORE
+        MENUITEM "Kill Velocity\tK",            KILL_VELOCITY
+        MENUITEM SEPARATOR
+        MENUITEM "Select Next\tTAB",            IDM_SELECT_NEXT
+        MENUITEM "Select Previous\tSHIFT_TAB",  IDM_SELECT_PREVIOUS
+        MENUITEM SEPARATOR
+        MENUITEM "-Z\tDOWN ARROW",              IDM_Z_MINUS
+        MENUITEM "+Z\tUP ARROW",                IDM_Z_PLUS
+        MENUITEM SEPARATOR
+        MENUITEM "Negative Mass\tM",            IDM_NEGATIVE_MASS
+        MENUITEM SEPARATOR
+        MENUITEM "Select Clicked\tLEFT MOUSE",  ID_SELECTCLICKED, GRAYED
+        MENUITEM "Change Momentum to Clicked Spot\tRIGHT MOUSE", 
+                                                ID_CHANGEMOMENTUM, GRAYED
+    END
+    POPUP "Physics Model"
+    BEGIN
+        MENUITEM "Rigid Body",                  IDM_BODY_RIGID
+        MENUITEM "Fluid Body",                  IDM_BODY_FLUID, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "(Classic) Static Collision",  IDM_STATIC_COLLISION
+        MENUITEM "Dynamic Collision",           IDM_DYNAMIC_COLLISION
+        MENUITEM SEPARATOR
+        MENUITEM "2D",                          IDM_DIMENSIONS_TWO
+        MENUITEM "3D",                          IDM_DIMENSIONS_THREE
+    END
+    POPUP "Restitution"
+    BEGIN
+        MENUITEM "COR=0.0 (clay)",              IDM_RESTITUTION_00
+        MENUITEM "COR=0.5",                     IDM_RESTITUTION_05
+        MENUITEM "COR=1.0 (perfectly elastic)", IDM_RESTITUTION_10
+    END
+    POPUP "Sound"
+    BEGIN
+        MENUITEM "Sound Effects",               IDM_SOUNDEFFECTS
+    END
+    POPUP "Time Factor"
+    BEGIN
+        MENUITEM "x 1",                         IDM_TIMEFACTOR_1
+        MENUITEM "x 10",                        IDM_TIMEFACTOR_10
+        MENUITEM "x 100",                       IDM_TIMEFACTOR_100
+        MENUITEM "x 1,000",                     IDM_TIMEFACTOR_1000
+        MENUITEM "x 10,000",                    IDM_TIMEFACTOR_10000
+        MENUITEM "x 100,000",                   IDM_TIMEFACTOR_100000
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   IDM_CONTENTS
+        MENUITEM "&Index",                      IDM_INDEX
+        MENUITEM "&Find",                       IDM_FIND
+        MENUITEM "",                            1
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_NBODYSIM ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "1",            IDM_VIEWPORT_100,       VIRTKEY, NOINVERT
+    "2",            IDM_VIEWPORT_200,       VIRTKEY, NOINVERT
+    "3",            IDM_VIEWPORT_500,       VIRTKEY, NOINVERT
+    "4",            IDM_VIEWPORT_1000,      VIRTKEY, NOINVERT
+    "5",            IDM_VIEWPORT_5000,      VIRTKEY, NOINVERT
+    "6",            IDM_VIEWPORT_10000,     VIRTKEY, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "G",            IDM_GRID,               VIRTKEY, NOINVERT
+    "I",            IDM_IGNORE,             VIRTKEY, NOINVERT
+    "K",            IDM_KILL_VELOCITY,      VIRTKEY, NOINVERT
+    "M",            IDM_NEGATIVE_MASS,      VIRTKEY, NOINVERT
+    "M",            IDM_NEGATIVE_MASS,      VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_UNIGNORE_ALL,       VIRTKEY, NOINVERT
+    VK_ADD,         IDM_INCREASE_MASS,      VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_KILL_VELOCITIES,    VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_Z_MINUS,            VIRTKEY, NOINVERT
+    VK_PAUSE,       IDM_PAUSERESUME,        VIRTKEY, NOINVERT
+    VK_SCROLL,      IDM_LOCK_VIEWPORT,      VIRTKEY, NOINVERT
+    VK_SPACE,       IDM_AUTOZOOM,           VIRTKEY, NOINVERT
+    VK_SUBTRACT,    IDM_DECREASE_MASS,      VIRTKEY, NOINVERT
+    VK_TAB,         IDM_SELECT_NEXT,        VIRTKEY, NOINVERT
+    VK_TAB,         IDM_SELECT_PREVIOUS,    VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          IDM_Z_PLUS,             VIRTKEY, NOINVERT
+    "`",            IDM_NUMERIC_DATA,       ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 240, 180
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_NBODYSIM,IDC_MYICON,14,9,20,20
+    LTEXT           "nBodySim Version 1.2",IDC_STATIC,49,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003, 2004 Lewis Sellers",IDC_STATIC,49,
+                    20,177,12
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+    LTEXT           "Intrafoundation.com",IDC_STATIC,50,36,171,11
+    LTEXT           "Rigid Body Impulse Simulation with (classic) Static and Dynamic collision detection.",
+                    IDC_STATIC,113,116,115,41
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP,9,59,83,100
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32825
+    BUTTON      ID_BUTTON32826
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "toolbar1.bmp"
+IDB_BITMAP_SARAH        BITMAP  DISCARDABLE     "nBodySim.dib"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_ABOUT          WAVE    DISCARDABLE     "about.wav"
+IDR_WAVE_COLLISION      WAVE    DISCARDABLE     "collision.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "nBodySim v1.2"
+    IDC_NBODYSIM            "NBODYSIM"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
