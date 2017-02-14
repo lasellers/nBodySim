@@ -67,9 +67,6 @@
     <Media Include="nBodySim_about.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="wave1.bin">
       <Filter>Resource Files</Filter>
     </CustomBuild>

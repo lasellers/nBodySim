@@ -5,6 +5,8 @@
 
 nBodySim is a port of software I wrote for my TI-85/86 graphing calculator that models a set of N spheres under Newtonian gravitation with collision responses.
 
+![nBodySim](https://github.com/lasellers/nBodySim/blob/master/screenshot1.png)
+
 This software was written in C++ using MSVC++ 6 Professional SP5 + MS Platform SDK.
 
 There is very little in the way of documentation for this software at the moment. Maybe latter one snowy day I’ll complete the collision functions and properly document how the program works and the mathematics behind it.

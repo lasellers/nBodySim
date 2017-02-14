@@ -170,9 +170,6 @@ copy release\nBodySim.exe nBodySim.exe</Command>
     <Media Include="collision.wav" />
     <Media Include="nBodySim_about.wav" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
