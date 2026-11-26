@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>..\nBodySim.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\nBodySim.ICO" Link="nBodySim.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\collision.wav" Link="collision.wav" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\about.wav" Link="about.wav" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Resources\sarah.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
